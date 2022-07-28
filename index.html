@@ -5,14 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>edTech-website</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/icone.jpg" type="image/x-icon">
+    <!--=================Bootstrap CDN link====================-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
 </head>
 <body>
-
+         <!--====================
+                Header Start
+          =======================-->
     <header class="container">
-            <!-- navbar start -->
+            <!--============
+              Navbar Start
+            ================-->
             <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
               <div class="container-fluid">
                 <a class="navbar-brand" href="#"><h1 class="fs-1 fw-bold text-dark">edTech</h1></a>
@@ -22,10 +27,10 @@
                 <div class="collapse navbar-collapse ms-lg-5" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      <a class="nav-link active" aria-current="page" href="#Home">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Courses</a>
+                      <a class="nav-link active" aria-current="page" href="#Crouse">Courses</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="#">Deals</a>
@@ -37,7 +42,7 @@
                       <a class="nav-link active" aria-current="page" href="#">About </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Register</a>
+                      <a class="nav-link active" aria-current="page" href="#Register">Register</a>
                     </li>
                   </ul>
                   <form class="d-flex">
@@ -46,7 +51,13 @@
                 </div>
               </div>
             </nav>
-      <!-- navbar-end -->
+      <!--==============
+          Navbar End
+      ==================-->
+
+      <!--================
+        Carousel Bennar Start
+      ====================-->
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -82,16 +93,26 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>  
+      </div> 
+      <!--=======================
+        Carousel Bennar End
+      ===========================-->
+
     </header>
-   
+
+
+   <!--====================
+          Header End
+    =======================-->
+
+
     <main>
        <!--====================
       Crouse section Start
     ========================-->
 
     <section>
-      <div class="container">
+      <div id="Crouse" class="container">
         <div class="bloge-info text-center my-5 pt-5">
           <h1 class="fw-bold">Discover Our Popular <br> Courses</h1>
           <p class="text-secondary">It is a long established fact that a reader will be distracted by the readable <br> content of a page when looking at its layout</p>
@@ -208,11 +229,13 @@
             </div>
            </div>
           <div class="w-100 d-flex justify-content-center my-5 ">
-            <button class="btn btn-info py-3 px-5">See More Courses</button>
+            <button class="btn btn-outline-info px-4 py-2 fs-5" type="submit">See More Courses</button>
           </div>
         
        </div>
     </section>
+
+
     <!--====================
       Crouse section end
     ========================-->
@@ -222,7 +245,7 @@
       Register section Start
     =========================-->
     <section>
-      <div class="container my-5">
+      <div id="Register" class="container my-5">
           <div class="bg-info">
               <div class="row p-5">
                   <div class="col-lg-6"> 
@@ -291,9 +314,107 @@
           </div>
       </div>
   </section>
+
+  
     <!--=====================
       Register section End
     =========================-->
+
+    <!--============================
+        Question section Start
+    ================================-->
+      <section class="container">
+        <div class="text-center">
+          <h1 class="fs-1 fw-bold" >Frequently Asked Questions</h1>
+          <p>It is a long established fact that a reader will be distracted by the readable <br>
+            content of a page when looking at its layout</p>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+               What is Bootstarp
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">1.
+                Bootstrap	Tailwind CSS
+                Comes with responsive layouts, components, and utility classes <br>
+              2.Less flexible than Tailwind
+              <br>
+              3. Larger file size than Tailwind due to its required files. <br> 4. Has been around much longer than Tailwind and is one of the most popular frameworks. <br> 5. Websites built using Bootstrap are known for their responsiveness and flawless design. <br> 6.Critics say that websites built using Bootstrap look similar
+            </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+               What is Tailwidth Css
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">1. Comes with a lot more utility classes than Bootstrap
+                <br>2.Core does not have components or layouts classes. <br>
+                3. More flexible than Bootstrap <br>
+                4. Can reduce the file size using PurgeCSS to remove unused classes . 
+                <br>
+                5. A newer framework that is gaining popularity
+                <br>
+                6. Critics say that using Tailwind CSS makes your code difficult to read
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              What is  FlexBox
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">With Flexbox, you can lay out and align elements in a container even if you don’t know the size of those elements or if the size might change. That’s because a flex container is flexible: it expands the flex elements to fill space when it’s available and shrinks them to prevent overflow when it’s not.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+               What is Grid
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Grid Layout, is a two-dimensional grid-based layout system with rows and columns, making it easier to design web pages without having to use floats and positioning. Like tables, grid layout allow us to align elements into columns and rows.
+
+                To get started you have to define a container element as a grid with display: grid, set the column and row sizes with grid-template-columns and grid-template-rows, and then place its child elements into the grid with grid-column and grid-row.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree">
+               What is Css Box Model
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseThree">
+                What is Semantics Tag
+              </button>
+            </h2>
+            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">The HTML semantics refers to the tags that provide meaning to an HTML page rather than just presentation. It makes HTML more comprehensible by better defining the different sections and layout of web pages. </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!--============================
+        Question section End
+    ================================-->
+
+
+
+    
     </main>
 
 
